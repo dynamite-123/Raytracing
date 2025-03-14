@@ -13,7 +13,7 @@ This project demonstrates the fundamentals of ray tracing using C and SDL2. The 
 Make sure you have the following installed:
 
 - [GCC](https://gcc.gnu.org/) (MinGW for Windows)
-- [SDL2](https://www.libsdl.org/)
+<!-- - [SDL2](https://www.libsdl.org/) -->
 
 ## Compilation
 
