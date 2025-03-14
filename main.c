@@ -11,6 +11,9 @@ struct Circle{
     double x, y, radius;
 };
 
+void FillCircle(SDL_Surface* surface, struct Circle Circle){
+
+}
 int main(int argc, char *argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
@@ -30,11 +33,10 @@ int main(int argc, char *argv[]) {
     SDL_Rect rect = (SDL_Rect) {200, 200, 200, 200};
     SDL_FillRect(surface, &rect, COLOR_WHITE);
     
-    FillCircle(surface, COLOR_WHITE);
+    // FillCircle(surface, COLOR_WHITE);
 
 
     SDL_UpdateWindowSurface(window);
-
     SDL_Delay(5000);
 
 }
