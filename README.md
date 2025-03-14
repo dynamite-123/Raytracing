@@ -5,7 +5,6 @@ This project demonstrates the fundamentals of ray tracing using C and SDL2. The 
 ## Features
 
 - Basic ray tracing algorithm
-- Sphere and plane intersection calculations
 - Lighting and shading effects
 - SDL2-based rendering
 
@@ -47,20 +46,20 @@ project-root/
 
 - [Simple DirectMedia Layer (SDL2)](https://www.libsdl.org/) for graphics rendering
 
-## Future Enhancements
+<!-- ## Future Enhancements
 
 - Add support for reflections and refractions
 - Implement texture mapping
-- Optimize performance with multi-threading
+- Optimize performance with multi-threading -->
 
-## License
+<!-- ## License
 
 This project is licensed under the MIT License.
 
 ## Acknowledgments
 
 - Inspired by various ray tracing tutorials and books
-- Uses SDL2 for rendering
+- Uses SDL2 for rendering -->
 
 
 
