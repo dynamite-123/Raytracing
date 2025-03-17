@@ -15,7 +15,7 @@ Make sure you have the following installed:
 - [GCC](https://gcc.gnu.org/) (MinGW for Windows)
 <!-- - [SDL2](https://www.libsdl.org/) -->
 
-## Compilation
+## Compilation (On Windows using GCC)
 
 To compile the program, run the following command:
 
