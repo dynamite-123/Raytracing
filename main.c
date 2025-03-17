@@ -1,6 +1,7 @@
 /*
 gcc main.c -Isrc\include -Lsrc\lib -lmingw32 -lSDL2main -lSDL2 -o main.exe
 */
+
 #include <SDL2/SDL.h>  //Simple DirectMedia Layer (SDL)
 #include <math.h>
 #include <stdio.h>
@@ -8,9 +9,15 @@ gcc main.c -Isrc\include -Lsrc\lib -lmingw32 -lSDL2main -lSDL2 -o main.exe
 #define HEIGHT 600
 #define COLOR_WHITE 0xffffffff
 #define COLOR_BLACK 0x00000000
+#define COLOR_GRAY 0xefefefef
+#define RAYS_NUMBER 100
 
 struct Circle {
     double x, y, radius;
+};
+
+struct Ray {
+    double x_start, y_start, angle;
 };
 
 // - Function to fill a circle
@@ -27,6 +34,17 @@ void FillCircle(SDL_Surface* surface, struct Circle circle, Uint32 color) {
     }
 }
 
+void generate_rays(struct Circle circle, struct Ray rays[RAYS_NUMBER]) {
+    for (int i=0; i<RAYS_NUMBER; i++) {
+        double angle = ((double) i / RAYS_NUMBER) * 2 * M_PI;
+        struct Ray ray = {circle.x, circle.y, angle};
+        printf("angle: %f\n", angle);
+    }
+}
+
+void FillRays(SDL_Surface *surface, struct Ray rays[RAYS_NUMBER], Uint32) {
+    
+}
 
 int main(int argc, char* argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -54,6 +72,9 @@ int main(int argc, char* argv[]) {
 
     SDL_UpdateWindowSurface(window);
 
+    struct Ray rays[RAYS_NUMBER];
+    generate_rays(circle, rays);
+
     int simulation_running = 1;
     SDL_Event event;
     while (simulation_running) {
@@ -64,11 +85,13 @@ int main(int argc, char* argv[]) {
             if (event.type == SDL_MOUSEMOTION && event.motion.state != 0) {
                 circle.x = event.motion.x;
                 circle.y = event.motion.y;
+                generate_rays(circle, rays);
             }
         }
         SDL_FillRect(surface, &erase_rect, COLOR_BLACK);
         FillCircle(surface, circle, COLOR_WHITE);
         FillCircle(surface, shadow_circle, COLOR_WHITE);
+        FillRays(surface, rays, COLOR_GRAY);
 
         SDL_UpdateWindowSurface(window);
         SDL_Delay(10);
