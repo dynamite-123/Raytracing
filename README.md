@@ -1,6 +1,7 @@
 # Ray Tracing in C
 
-This project demonstrates the fundamentals of ray tracing using C and SDL2. 
+This project demonstrates the fundamentals of ray tracing using C and SDL2.
+<br>
 The program renders a simple scene using ray tracing techniques.
 
 ## Features
