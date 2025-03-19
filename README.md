@@ -27,7 +27,7 @@ gcc main.c -Isrc\include -Lsrc\lib -lmingw32 -lSDL2main -lSDL2 -o main.exe
 
 ## Execution
 
-After compiling, run the program using:
+After compiling, run the program using(on windows):
 
 ```sh
 .\main
