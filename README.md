@@ -1,7 +1,7 @@
 # Ray Tracing in C
 
-This project demonstrates the fundamentals of ray tracing using C and SDL2. The program renders a simple scene using ray tracing techniques.
-What is ray tracing?   <link>https://developer.nvidia.com/discover/ray-tracing</link>
+This project demonstrates the fundamentals of ray tracing using C and SDL2. 
+The program renders a simple scene using ray tracing techniques.
 
 ## Features
 
