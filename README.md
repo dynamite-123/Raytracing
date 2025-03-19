@@ -49,7 +49,9 @@ project-root/
 
 ## References
 
-- <a id = "https://wiki.libsdl.org/SDL2/FrontPage"> SDL2 documentation </a>
+- [HirschDaniel: Coding Raytracing in C](https://youtu.be/2BLRLuczykM?si=pF6zifO4QdC-IUH8)
+- [SDL2 documentation](https://wiki.libsdl.org/SDL2/FrontPage)
+- [What is Raytracing](https://developer.nvidia.com/discover/ray-tracing)
 
 
 
