@@ -47,20 +47,11 @@ project-root/
 
 - [Simple DirectMedia Layer (SDL2)](https://www.libsdl.org/) for graphics rendering
 
-<!-- ## Future Enhancements
+## References
 
-- Add support for reflections and refractions
-- Implement texture mapping
-- Optimize performance with multi-threading -->
+- <a id = "https://wiki.libsdl.org/SDL2/FrontPage"> SDL2 documentation </a>
 
-<!-- ## License
 
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-- Inspired by various ray tracing tutorials and books
-- Uses SDL2 for rendering -->
 
 
 
